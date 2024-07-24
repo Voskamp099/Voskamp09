@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>demo</title>
+</head>
+
+<body>
+<img src="https://maritimesouth.com/wp-content/uploads/2021/04/world-bank-report.png?w=1696&h=641&crop=1" alt="Image Description" width="device-width" height="400">
+
+<h1 style="text-align:center;">Autonomous Exploration Development Environment</h1>
+<p>The environment is meant for leveraging system development and robot deployment for ground-based autonomous navigation and exploration. Containing a variety of simulation environments, autonomous navigation modules such as collision avoidance, terrain traversability analysis, waypoint following, etc, and a set of visualization tools, users can develop autonomous navigation systems and later on port those systems onto real robots for deployment. Here is our <a href="https://github.com/HongbiaoZ/autonomous_exploration_development_environment">open-source repository</a>.</p>
+
+<div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/gJMwWmBZNpI?si=obOpAxIUoiK9muaY"></iframe></div>
+
+<h2 style="color:CornFlowerBlue;">Quick Start</h2>
+<p>The repository has been tested in Ubuntu 18.04 with ROS Melodic and Ubuntu 20.04 with ROS Noetic.  If using Ubuntu 22.04 with ROS2 Humble, please refer to our instructions to setup the system with ROS2. Install dependencies with command lines below.</p>
+
+<p style="background-color:Gainsboro">sudo apt update<br>
+sudo apt install libusb-dev</p>
+
+<h2 style="color:CornFlowerBlue;">Detailed Instructions</h2>
+<h3>Simulation Environments</h3>
+<p>The repository contains a set of simulation environments of different types and scales. To launch the system with a particular environment, use the command line below. Replace 'environment' with the environment name, i.e. 'campus', 'indoor', 'garage', 'tunnel', and 'forest'. Now, users can use the 'Waypoint' button in RVIZ to navigate the vehicle. To view the vehicle in the environment in Gazebo GUI, set 'gazebo_gui = true' in the launch file, which is in 'src/vehicle_simulator/launch'.</p>
+
+<p><b>Campus (340m x 340m):</b> A large-scale environment as part of the Carnegie Mellon University campus, containing undulating terrains and convoluted environment layout.<br><br>
+<b>Indoor Corridors (130m x 100m):</b> Consists of long and narrow corridors connected with lobby areas. Obstacles such as tables and columns are present. A guard rail adds more difficulty to autonomous exploration.</P>
+
+<img src="https://lh5.googleusercontent.com/om6g8AXyGsciOm7nbRWrsrL_inEBaU-mO2RaKHDMxWdZSEI1VtVzrLYLuq5U5AQ3YT0Wa9VmNhrATOZ6WBtU3krklLyEG-xvIYGCE2aZQ14ml8wRaJlSzjcH7-7s2R2Chw=w1280" alt="Image Description" width="device-width" height="200">
+</body>
+</html>
